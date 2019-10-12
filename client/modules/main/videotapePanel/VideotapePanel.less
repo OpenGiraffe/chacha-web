@@ -1,0 +1,251 @@
+.module-main-videotapePanel {
+    flex: 1;
+    display: flex;
+}
+
+.module-main-feature {
+    width: 300px;
+    height: 100%;
+    background-color: var(--primary-color-5);
+    position: relative;
+    display: flex;
+    flex-direction: column;
+}
+
+.module-main-video {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    background-color: rgba(241, 241, 241, 0.6);
+    border-top-right-radius: 10px;
+    border-bottom-right-radius: 10px;
+    overflow: hidden;
+    position: relative;
+
+    .showElement {
+        display: block;
+    }
+    .hideElement {
+        display: none;
+    }
+    video {
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%
+    }
+
+    .videoLiveStream {
+        .videoInfo {
+            position: absolute;
+            border: 0px lawngreen solid;
+            height: 25px;
+            width: 100%;
+            top: 0px;
+            & > div {
+                color: #ffffff;
+                margin: 4px;
+            }
+            & > p {
+                color: #ffffff;
+                margin: 4px;
+            }
+        }
+        .videoControl {
+            position: absolute;
+            border: 0px lawngreen solid;
+            height: 25px;
+            width: 100%;
+            bottom: 0px;
+
+            & > div {
+                color: #ffffff;
+                margin: 4px;
+            }
+
+            .timeline {
+                float: left;
+                border: 0px palevioletred solid;
+            }
+
+            .pull-right {
+                float: right;
+                margin: 2px;
+                padding: 0px;
+            }
+        }
+    }
+
+    .video-window-1 {
+        float: left;
+        margin-left: 2px;
+        margin-bottom: 2px;
+        overflow: auto;
+        width: 99.5%;
+        padding-bottom: 58.2%;
+        position: relative;
+        background-color: #000;
+    }
+
+    .video-window-4 {
+        float: left;
+        margin-left: 2px;
+        margin-bottom: 2px;
+        width: 49.7%;
+        height: 0;
+        overflow: auto;
+        position: relative;
+        padding-bottom: 27.8%;
+        background-color: #000;
+    }
+
+    .video-window-9 {
+        float: left;
+        margin-left: 2px;
+        margin-bottom: 2px;
+        width: 33%;
+        height: 0;
+        overflow: auto;
+        position: relative;
+        padding-bottom: 18.5%;
+        background-color: #000;
+    }
+
+    .video-window-16 {
+        float: left;
+        margin-left: 2px;
+        margin-bottom: 2px;
+        width: 24.7%;
+        height: 0;
+        overflow: auto;
+        position: relative;
+        padding-bottom: 13.84%;
+        background-color: #000;
+    }
+
+    .video-screengroup {
+        border: 0px red solid;
+        margin-bottom: 10px;
+        margin-top: 5px;
+    }
+
+    .video-screenmain {
+        border: 0px red solid;
+    }
+
+    .video-nosignal {
+        background-color: #000000;
+        text-algin: center;
+
+        & > div {
+            color: #ffffff;
+            margin: 4px;
+        }
+
+        .pull-right {
+            float: right;
+            margin: 4px;
+        }
+
+        .pull-middle {
+            position: relative;
+            margin: 4px;
+            float: left;
+            left: 50%;
+        }
+    }
+
+}
+
+.channelDialog {
+    width: 100%;
+    height: 80%;
+}
+
+.grid {
+    background-color: #ffffff;
+}
+
+
+.save-dialog {
+    .content {
+        display: flex;
+        flex-direction: column;
+
+        h3 {
+            font-size: 14px;
+            font-weight:normal;
+            line-height: 31px;
+            color: #333;
+        }
+        button {
+            width: 66px;
+            height: 36px;
+            border-radius: 6px;
+            margin-top: 12px;
+            background-color: var(--primary-color-10);
+            color: var(--primary-text-color-10);
+            align-self: flex-end;
+            font-size: 14px;
+            border: none;
+
+            &:hover {
+                background-color: var(--primary-color-8);
+            }
+        }
+        .component-input {
+            height: 40px;
+        }
+    }
+}
+
+.info-dialog {
+    width: 300px !important;
+
+    .rc-dialog-body {
+        padding: 0;
+    }
+
+    .content {
+        text-align: center;
+
+        .header {
+            background-color: rgb(240, 242, 245);
+            padding: 20px 0 14px 0;
+            border-top-left-radius: 6px;
+            border-top-right-radius: 6px;
+
+            .large-avatar {
+                position: absolute;
+                top: -100px;
+                left: 220px;
+                width: 300px;
+                height: 300px;
+            }
+        }
+
+        .info {
+            padding: 10px 20px 20px 20px;
+
+            & > div {
+                text-align: left;
+                display: flex;
+                height: 30px;
+                align-items: center;
+                font-size: 14px;
+
+                & > p {
+                    width: 80px;
+                    color: #666;
+                }
+            }
+
+            & > button {
+                width: 100%;
+                height: 34px;
+                margin-top: 10px;
+            }
+        }
+    }
+}
