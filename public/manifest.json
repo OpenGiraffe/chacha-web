@@ -1,0 +1,15 @@
+{
+    "name": "chacha",
+    "short_name": "喳喳",
+    "start_url": "/",
+    "display": "standalone",
+    "background_color": "#FAFAFA",
+    "description": "",
+    "orientation": "portrait-primary",
+    "theme_color": "#4a90e2",
+    "icons": [{
+        "src": "",
+        "sizes": "144x144",
+        "type": "image/png"
+    }]
+}
