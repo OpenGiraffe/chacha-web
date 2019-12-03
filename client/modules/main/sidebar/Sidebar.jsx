@@ -170,7 +170,7 @@ class Sidebar extends Component {
                                 null
                         }
 
-                        {Sidebar.renderTooltip('通讯录', <IconButton width={50} height={50} icon="tongxunlu" iconSize={34} onClick={this.handleAddressBook} />)}
+                        {/*Sidebar.renderTooltip('通讯录', <IconButton width={50} height={50} icon="tongxunlu" iconSize={34} onClick={this.handleAddressBook} />)*/}
                         {Sidebar.renderTooltip('即时通讯', <IconButton width={50} height={50} icon="xinfeng" iconSize={34} onClick={this.handleChat} />)}
                         {/* {Sidebar.renderTooltip('关于', <IconButton width={50} height={50} icon="about" iconSize={34} onClick={this.toggleInfoDialog} />)} */}
                         {Sidebar.renderTooltip('视频监控', <IconButton width={50} height={50} icon="shipin" iconSize={34} onClick={this.handleVideotape} />)}
@@ -256,7 +256,7 @@ class Sidebar extends Component {
                     </Dialog>
                     <Dialog className="dialog fiora-info " visible={infoDialog} title="关于" onClose={this.toggleInfoDialog}>
                         <div className="content">
-                            
+
                         </div>
                     </Dialog>
                     <AppDownload visible={appDownloadDialog} onClose={this.toggleAppDownloadDialog} />

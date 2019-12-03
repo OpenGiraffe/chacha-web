@@ -154,7 +154,7 @@ class Feature extends Component {
             usersDom.push((
                 <div key={users[i]._id} onClick={this.openUserInfoDialog.bind(this, users[i])}>
                     <Avatar size={40} src={users[i].avatar} />
-                    <p>{users[i].username}</p>
+                    <p>{users[i].username} | {users[i].loginName}</p>
                 </div>
             ));
         }
